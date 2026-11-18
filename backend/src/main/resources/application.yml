@@ -1,0 +1,13 @@
+server:
+  port: ${PORT:8080}
+  forward-headers-strategy: framework
+
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    open-in-view: false # 세션 유지 비활성화
+    hibernate:
+      ddl-auto: validate # 스키마 검증

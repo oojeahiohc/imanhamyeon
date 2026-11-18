@@ -1,0 +1,24 @@
+# React
+**/node_modules/
+**/dist/
+
+# Spring Boot / Gradle
+**/build/
+**/.gradle/
+
+# 환경 변수
+**/.env
+**/.env.*
+
+# IDE
+.idea/
+.settings/
+.project
+.classpath
+.factorypath
+.vscode/
+*.launch
+
+# 운영체제
+.DS_Store
+Thumbs.db
