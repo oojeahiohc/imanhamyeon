@@ -11,3 +11,15 @@ spring:
     open-in-view: false # 세션 유지 비활성화
     hibernate:
       ddl-auto: validate # 스키마 검증
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
+            scope:
+              - openid
+              - profile
+              - email
+            redirect-uri: ${GOOGLE_REDIRECT_URI:http://localhost:8080/login/oauth2/code/google}
